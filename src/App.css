@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Agrandir";
+  src: local("Agrandir"), url("./fonts/Agrandir-800.otf") format("truetype");
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.font-primary {
+  font-family: "Agrandir";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.font-secondary{
+  font-family: 'Mulish', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero-screen {
+  background: url("./images/home/Hero.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
 }
 
-.App-link {
-  color: #61dafb;
+.layer {
+  background: url("./images/home/Layer.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-outlined {
+  height: 50px;
+  border: 1px solid #FFF;
+  border-radius: 7px;
+  @apply uppercase lg:text-xs [font-size:10px] lg:px-6 px-4 flex bg-black items-center justify-between  gap-2;
+}
+
+
+.payment-screen {
+  background: url("./images/payment/PaymentSection.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  @apply lg:[background-position-y:bottom] md:[background-position-y:60px] sm:[background-position-y:80px] [background-position-y:120px];
+}
+.banking-screen {
+  background: url("./images/bank/banking.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  @apply lg:[background-position-y:bottom] md:[background-position-y:60px] sm:[background-position-y:80px] [background-position-y:120px];
+}
+.cash-screen {
+  background: url("./images/cash/cash.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  @apply lg:[background-position-y:bottom] md:[background-position-y:60px] sm:[background-position-y:80px] [background-position-y:120px];
+}
+.investing-screen {
+  background: url("./images/investing/Investing.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  background-position-y:0;
+  /* @apply lg:[background-position-y:top] md:[background-position-y:60px] sm:[background-position-y:80px] [background-position-y:120px]; */
 }
